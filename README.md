@@ -1,4 +1,4 @@
-# Building AI apps with Continual, Snowflake, and Streamlit
+# Building AI apps with Continual, Streamlit, and Snowflake
 In this tutorial, we’re going to build an interactive Customer Risk Dashboard using the open-source Python framework, Streamlit, and the Continual predictions generated in the [Snowflake and Continual Quickstart Guide](https://continual.ai/post/snowflake-and-continual-quickstart-guide). If you haven’t completed the Quickstart Guide, I encourage you to bookmark this page and follow the guide to create the predictions. 
 
 In the Snowflake and Continual Quickstart Guide, we connected Continual to Snowflake and created a machine learning model for predicting whether customers are going to churn. We loaded a simple dataset of customer information, activity, and churn status into Snowflake and built a machine learning model in Continual to predict the likelihood of a customer churning. 
