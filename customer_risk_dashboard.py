@@ -23,7 +23,7 @@ def run_query(query):
        return cur.fetchall()
 
 # Query Snowflake for features and predictions
-data = run_query("SELECT ds.*, p.churn_prediction, p.churn_true_prediction_score from brendan_test.customerchurn_7.telco_info ds left join brendan_test.customerchurn_7.MODEL_CUSTOMER_CHURN_30DAYS2_PREDICTIONS p using (id)")
+data = run_query("SELECT ds.*, p.churn_prediction, p.churn_true_prediction_score from [database name].customerchurn.telco_info ds left join [database name].customerchurn.MODEL_CUSTOMER_CHURN_30DAYS_PREDICTIONS p using (id)")
 
 # Create dataframe of features and predictions
 df = pd.DataFrame(data, columns=["CustomerID", "State", "CustomerAge", "Area_Code", "International_Plan",
