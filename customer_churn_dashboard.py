@@ -4,10 +4,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import csv
 
-st.set_page_config(page_title="Customer Risk Dashboard",layout="wide")
+st.set_page_config(page_title="Customer Churn Dashboard",layout="wide")
 
 # Page header
-st.title("Customer Risk Dashboard")
+st.title("Customer Churn Dashboard")
 
 @st.experimental_singleton
 def init_connection():
